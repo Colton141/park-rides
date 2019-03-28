@@ -4,13 +4,27 @@ $(document).ready(function(){
 
     if (height >= 3){
       $(".s").show();
-    } else if (height >= 4){
+      $(".m").hide();
+      $(".l").hide();
+      $(".x").hide();
+    }
+   if (height >= 4){
       $(".m").show();
-    } else if (height >= 5){
-      $(".l").show();
-    } else if (height >= 6){
-      $(".x").show();
       $(".s").hide();
+      $(".l").hide();
+      $(".x").hide();
+    }
+   if (height >= 5){
+      $(".l").show();
+      $(".s").hide();
+      $(".m").hide();
+      $(".x").hide();
+    }
+   if (height >= 6){
+      $(".x").show();
+      $(".l").hide();
+      $(".s").hide();
+      $(".m").hide();
     }
     event.preventDefault();
   });
